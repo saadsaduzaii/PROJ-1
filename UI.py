@@ -1,10 +1,12 @@
 import features
 from features import per_addition, per_subtract
+from feature2 import mul_tply
 def app_UI():
       print("**********Welcome to Calclator app***********")
       print("""Operations available are
        1.Addition
        2.Subtraction
+       3. Multiply
             """)
 def num_bers():
       inp_1=int(input("Enter first number: "))
@@ -16,6 +18,8 @@ def func_tions(inp_1, inp_2):
             return per_addition(inp_1, inp_2)
       elif user_inp==2:
             return per_subtract(inp_1, inp_2)
+      elif user_inp==3:
+            return mul_tply(inp_1, inp_2)
       else:
             print("invalid operation")
 app_UI()
